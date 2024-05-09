@@ -1,5 +1,5 @@
 <template>
- <ContentField>我的列表</ContentField>
+ <ContentField>我的Bot</ContentField>
 </template>
 
 <script>
