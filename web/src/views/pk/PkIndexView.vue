@@ -22,6 +22,7 @@ export default {
         const store = useStore();
         const socketUrl = `ws://localhost:3000/websocket/${store.state.user.token}`
 
+
         let socket = null
         onMounted(() => {
 
@@ -47,7 +48,7 @@ export default {
                     })
                     setTimeout(() => {
                         store.commit("updateStatus","playing")
-                    }, 1000);
+                    }, 200);
                     store.commit("updateGamemap",data.game)
                 } else if (data.event === 'move') {
                     console.log(data)
@@ -79,6 +80,8 @@ export default {
 
         onUnmounted(()=>{
             socket.close()
+            
+            store.commit("updateLoser",'none')
         })
     }
 }
