@@ -85,7 +85,7 @@ export class GameMap extends AcGameObject {
 
 
     add_listening_events() {
-        console.log(this.store.state.record)
+        (this.store.state.record)
         if (this.store.state.record.is_record) {
             let k = 0
             const loser = this.store.state.record.record_loser

@@ -103,5 +103,13 @@ div.user-color {
     color: white;
     font-size: 20px;
     font-weight: 600;
+
+}
+
+div.user-color {
+    position: absolute;
+    bottom: 5vh;
+    width: 100%;
+    text-align: center;
 }
 </style>
